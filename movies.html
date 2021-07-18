@@ -1,0 +1,206 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1,shrink-to-fit=no">
+	<title>SOMOV</title>
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/css/bootstrap.min.css" rel="stylesheet">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+	<link rel="icon" href="SM(logo).png" type="image/png">
+	<link rel="stylesheet" href="styledemo.css">
+      <script type="text/javascript" src="https://gc.kis.v2.scr.kaspersky-labs.com/FD126C42-EBFA-4E12-B309-BB3FDD723AC1/main.js?attr=5_mZyIt5akA1tLZxys4cyPQJ2zlDMoBDmrKgaJV9O7dKPsrwcZTfMmJKI00sityhG0buP41Wec4QFJOak6CpHj2f_L_l9_fMJGl-2TIPOyF1Evz9iEDX8QD5f6SLxyl77tqYssQoRGoaWAaAFiiXwlQwynWRyq5FIrvKaEncDQR2NuqdZwsfgOgVn1JKsoUkfzDvwEgNKTsPThV-E2Zpdr8ql50YiwDVL6mEhgVxt2csnwmBQvIoxoWXgAhzFO_WgrDS0h0HcrxZTVEnHXiWFF8LE29dFoG6r2oh82JZbMsfJ6mcTDOBwHyO8Fnofg_wH8YbQGeAU-HdP5gDCq1q8dARdeT7qmh71ZN709hRU6OntjVl3ybSiwARqSacL12y3_gyU4fhv7g4fU9TeOInmdfmM-yvOAbRv3AxlwaqUrfHhsgiGmF5kk6Cvjfmbhz51IaMQWVATQElbsAvWOpYDnh9Oma8dQwdIzf69_BkAN2saN2WFUL7JLiIy_TBJd2Lmev43dIYqPbvBVjYHmSvx6qLvFR07w5l8Ci2NA98SaaoMnZOQAOadm0OsgdmI5GusFyePJu2YxnRumAmaanOhDYjuAelnqeGnAOiJk3VZpBPwyNLI2tCBS52Etl2csbmLLtIqyug1H4Q7dMKgzHmS9o9ujo1hWtb9yRVjSEkcnFZN-ifk01RAvMzGGIs8yhdJb9OvxBPg2l5wEBWpQ0cGhOK5h8x5YLVELRuFbLJB1u-AT2OzL7cnKNfRZGW9Up7o1AIjoC5dkMHDEe8heOmY-L-g8GA__aJqLEvx3wW5blwn9xio_S_0098Z8tqQVG9x3mYABysMTjsDF2sYgEQFSaWjDaqdANjgsq8F43spy8Bc0x0GAuL6WX8JSSLQ-xMjb8hF7ACLqnW4TH-GzE6DXLhnmD2NIokVbRT6fkM4Mt_5oJOU1z_L2JO8WqoIwERS3GYk1pO8d2CykHpOfOCY1wArv9zW56E1fUEERLrBstas3BO2FN7SRsTBzOgL29Z1X2jX-an1yAt7T5zNX7sbqO0QCVJyVefKnEClAg_Hv28660iqw0aaCi0BPeRvsafj1Mks8-fWlUsjT0pzE8UBtzBWw0G-f6S88uWXvPAuCHcrU-vsactekNIRG2vZZQHL7pVB6nwqqh0gwNrN0WCOKkScF4Xnm_WlV3anrcdDFc" nonce="31d4fce9348f145f050fccfcca185e00" charset="UTF-8"></script>
+    </head>
+    <body>
+	<div class="logo"><img src="SM(logo).png" alt="logo"></div>
+	<nav>
+			<a href="h.html" class="home"><b>Home<b></a>
+			<div class="dropdown"><a href="movies.html" style="padding-right:110px;padding-left:75px;">Movies</a>
+				<div class="dropdown-content">
+						<a href="action.html">Action</a>
+						<a href="comedy.html">Comedy</a>
+						<a href="scifi.html">Scifi</a>
+					</div>
+			</div>
+			<div class="dropdown">
+				<a href="songnew.html" style="padding-right:110px;padding-left:75px;">Songs</a>
+				<div class="dropdown-content">
+						<a href="hiphop.html">HipHop</a>
+						<a href="melody.html">Melody</a>
+						<a href="party.html">Party</a>
+				</div>
+			</div>
+		<a href="about.html">About</a>
+	</nav>
+	<div class="user">
+		<button onclick="myFunction()" class="dropbtn"><i class="fa fa-user-circle-o" style="font-size:24px"></i></button>
+		<div id="logout" class="dropdown-content1">
+			<a href="logout.php">Logout</a>
+		</div>
+	</div>	
+	<script>
+		function myFunction() {
+			document.getElementById("logout").classList.toggle("show");
+		}
+
+		window.onclick = function(event) {
+			if (!event.target.matches('.dropbtn')) {
+				var dropdowns = document.getElementsByClassName("dropdown-content1");
+				var i;
+				for (i = 0; i < dropdowns.length; i++) {
+				var openDropdown = dropdowns[i];
+				if (openDropdown.classList.contains('show')) {
+					openDropdown.classList.remove('show');
+				  }
+				}
+			}
+		}
+	</script>
+	 <div class="col-md-12">
+        <h3><marquee direction="right">Watch next</marquee></h3>
+    </div>
+<div class="slideshow-container">
+
+  <!-- Full-width images with number and caption text -->
+  <div class="mySlides fade">
+    <div class="numbertext"></div>
+    <img src="Movies\English\Extraction.jpg" style="width:100%;height:550px">
+    
+  </div>
+
+  <div class="mySlides fade">
+    <div class="numbertext"></div>
+    <img src="Movies\Hindi\bala.jpg" style="width:100%;height:550px">
+    
+  </div>
+
+  <div class="mySlides fade">
+    <div class="numbertext"></div>
+    <img src="Movies\English\arrival.jpg" style="width:100%;height:550px">
+    
+  </div>
+  
+  <div class="mySlides fade">
+    <div class="numbertext"></div>
+    <img src="Movies\Hindi\baaghi3.jpg" style="width:100%;height:550px">
+    
+  </div>
+  
+  <div class="mySlides fade">
+    <div class="numbertext"></div>
+    <img src="Movies\English\martian.jpg" style="width:100%;height:550px">
+    
+  </div>
+
+  <!-- Next and previous buttons 
+  <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+  <a class="next" onclick="plusSlides(1)">&#10095;</a>-->
+</div>
+<br>
+
+<!-- The dots/circles -->
+<div style="text-align:center">
+  <span class="dot" onclick="currentSlide(1)"></span>
+  <span class="dot" onclick="currentSlide(2)"></span>
+  <span class="dot" onclick="currentSlide(3)"></span>
+  <span class="dot" onclick="currentSlide(4)"></span>
+  <span class="dot" onclick="currentSlide(5)"></span>
+</div>
+</div>
+<h3>Hollywood Movies</h3>
+<div class="row1">
+  <div class="column">
+    <a href="javascript:void();" class="album-poster">   
+        <video width=100% height=100% controls poster="Movies\English\Extraction.jpg"><source src="Movies\English\Extraction.mp4"> </video>
+    </a>
+    <h4>Extraction</h4>
+  </div>  
+  <div class="column">
+    <a href="javascript:void();" class="album-poster"> 
+        <video width=100% height=100% controls poster="Movies\English\Spider-Man.jpg"><source src="Movies\English\Spider-Man.mp4"> </video>
+      </a>
+    <h4>Spider Man</h4>
+  </div>
+   <div class="column">
+    <a href="javascript:void();" class="album-poster"> 
+    <video width=100% height=100% controls poster="Movies\English\JohnnyEglishSA_Poster.png"><source src="Movies\English\JohnnyEnglishSA.mp4"> </video>
+    </a>
+     <h4>Johnny English</h4>
+  </div>
+  <div class="column">
+      <a href="javascript:void();" class="album-poster"> 
+      <video width=100% height=100% controls poster="Movies\English\arrival.jpg"><source src="Movies\English\arrival.mp4"> </video>  
+      </a>
+    <h4>Arrival</h4>
+  </div>
+  <div class="column">
+      <a href="javascript:void();" class="album-poster"> 
+      <video width=100% height=100% controls poster="Movies\English\martian.jpg"><source src="Movies\English\martian.mp4"> </video>
+      </a>
+    <h4>Martian</h4>
+  </div>
+ 
+</div>
+<h3>Bollywood Movies</h3>
+<div class="row1">
+  <div class="column">
+    <a href="javascript:void();" class="album-poster">   
+        <video width=100% height=100% controls poster="Movies\Hindi\baaghi3.jpg"><source src="Movies\Hindi\baaghi3.mp4"> </video>
+    </a>
+    <h4>Baaghi 3</h4>
+  </div>  
+  <div class="column">
+    <a href="javascript:void();" class="album-poster"> 
+        <video width=100% height=100% controls poster="Movies\Hindi\uri.jpg"><source src="Movies\Hindi\uri.mp4"> </video>
+      </a>
+    <h4>URI</h4>
+  </div>
+   <div class="column">
+    <a href="javascript:void();" class="album-poster"> 
+    <video width=100% height=100% controls poster="Movies\Hindi\missionmangal.jpg"><source src="Movies\Hindi\missionmangal.mp4"> </video>
+    </a>
+     <h4>Mission Mangal</h4>
+  </div>
+  <div class="column">
+      <a href="javascript:void();" class="album-poster"> 
+      <video width=100% height=100% controls poster="Movies\Hindi\bala.jpg"><source src="Movies\Hindi\bala.mp4"> </video>  
+      </a>
+    <h4>Bala</h4>
+  </div>
+  <div class="column">
+      <a href="javascript:void();" class="album-poster"> 
+      <video width=100% height=100% controls poster="Movies\Hindi\dhamaal.jpg"><source src="Movies\Hindi\dhamaal.mp4"> </video>
+      </a>
+    <h4>Dhamaal</h4>
+  </div>
+ 
+</div>
+<script>
+var slideIndex = 0;
+showSlides();
+
+function showSlides() {
+  var i;
+  var slides = document.getElementsByClassName("mySlides");
+  var dots = document.getElementsByClassName("dot");
+  for (i = 0; i < slides.length; i++) {
+    slides[i].style.display = "none";  
+  }
+  slideIndex++;
+  if (slideIndex > slides.length) {slideIndex = 1}    
+  for (i = 0; i < dots.length; i++) {
+    dots[i].className = dots[i].className.replace(" active", "");
+  }
+  slides[slideIndex-1].style.display = "block";  
+  dots[slideIndex-1].className += " active";
+  setTimeout(showSlides, 2000); // Change image every 2 seconds
+}
+</script>
+<div class="f"><br>
+<center><a href="#top">Back To Top Of Page</a>
+<br>
+<br></center>
+</div>
+</body>
+</html>
